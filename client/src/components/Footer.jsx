@@ -24,7 +24,7 @@ export default function FooterCom() {
                  target='_blank'
                  rel='noopener noreferrer'
               >
-                about
+                abhu's blog
               </Footer.Link>
               <Footer.Link
                  href='https://codeforces.com/profile/abhijith88'
