@@ -59,7 +59,7 @@ export default function DashProfile() {
         <input type="file" accept='image/*' onChange={handleImageChange}  ref={filePickerRef} hidden />
         <div className='relative w-32 h-32 self-center cursor-pointer shadow-md overflow-hidden rounded-full' 
         onClick = {() => filePickerRef.current.click()}>
-          {imageFileUploadProgress && <CircularProgressbar value={imageFileUploadProgress || 0} 
+        {imageFileUploadProgress && <CircularProgressbar value={imageFileUploadProgress || 0} 
           text={`${imageFileUploadProgress}%`}
           strokeWidth={5}
           styles={{
@@ -74,7 +74,7 @@ export default function DashProfile() {
               stroke: `rgba(62, 152,199 , ${imageFileUploadProgress/100})`,     
             },
           }}
-           />}
+           />} 
         <img src={imageFileUrl || currentUser.profilePicture} alt="user" className={`rounded-full w-full h-full object-cover border-8 border-[lightgray]
         ${imageFileUploadProgress && imageFileUploadProgress<100 && 'opacity-60'}`} />
         </div>
